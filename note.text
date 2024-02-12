@@ -29,3 +29,8 @@ python3 manage.py runserver
 python3 manage.py startapp <name>
 
 ** add your up app name to settings.py
+---------------------------------------------
+#create super user
+python3 manage.py createsuperuser
+
+** add a test model in backend/model.py
