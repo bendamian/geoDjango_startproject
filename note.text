@@ -1,0 +1,31 @@
+pyu#check python version
+python3 python -V
+
+#install python virtual environment
+sudo apt install python3.10-venv
+
+#create a virtual environment
+python3 -m venv <name>
+
+#activate virtual environment
+source <name>/bin/activate
+
+#stop your virtual environment
+deactivate
+------------------------------------------------
+# install django
+pip install django
+
+# check django list
+pip list
+
+#create a new project(dot is must in the end)
+django-admin startproject <name> .
+
+#start saver your development server
+python3 manage.py runserver
+
+#create a new app
+python3 manage.py startapp <name>
+
+** add your up app name to settings.py
