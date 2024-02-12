@@ -40,4 +40,17 @@ setting.py
 
 #add the media folder and add the folder in
 setting.py,urls.py
------------------------------------------------
+----------------------[GeoDjango]-------------------------
+install GDAL  and Activating GeoDjango by adding
+"django.contrib.gis" to setting.py
+------------------------------------------------------
+#Installing SpatiaLite
+sudo apt install libsqlite3-mod-spatialite
+
+#Activating SpatiaLite
+# config/settings.py
+DATABASES = {"default": {
+"ENGINE": "django.contrib.gis.db.backends.spatialite",
+"NAME": BASE_DIR / "db.sqlite3",
+}}
+
