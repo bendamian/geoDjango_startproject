@@ -27,3 +27,15 @@ class Marker(models.Model):
 
     def __str__(self):
         return f" {self.name},{self.city},{self.street},  {self.county} {self.postcode}"
+
+
+class Area(models.Model):
+    category = models.ForeignKey('Category', on_delete=models.CASCADE)
+    name = models.CharField('polygon name', max_length=225, help_text=" name of the polygon to")
+    boundary = models.PolygonField()
+
+    class Meta:
+        verbose_name_plural = 'Areas'
+
+    def __str__(self):
+        return self.name

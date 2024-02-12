@@ -1,5 +1,5 @@
 from django.contrib.gis import admin
-from .models import Category, Marker
+from .models import Category, Marker, Area
 
 # Register your models here.
 admin.site.register(Category)
@@ -19,3 +19,9 @@ class CustomGeoAdmin(admin.GISModelAdmin):
 @admin.register(Marker)
 class MakerAdmin(CustomGeoAdmin):
     list_display = ("name", "street", "city")
+
+
+@admin.register(Area)
+class AriaAdmin(CustomGeoAdmin):
+    list_display = ('name', 'boundary')
+    search_fields = ('name',)
