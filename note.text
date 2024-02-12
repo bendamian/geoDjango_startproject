@@ -53,4 +53,15 @@ DATABASES = {"default": {
 "ENGINE": "django.contrib.gis.db.backends.spatialite",
 "NAME": BASE_DIR / "db.sqlite3",
 }}
+-------------------------------------------------
+install Pillow for image up lodes
 
+----------------------------------------
+Adding the Marker model to backend
+
+add do :-
+$ python -m manage makemigrations
+$ python -m manage migrate
+
+add the Marker model to admin.py
+-----------------------------------------
