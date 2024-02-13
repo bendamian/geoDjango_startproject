@@ -1,5 +1,5 @@
 from django.contrib.gis import admin
-from .models import Category, Marker, Area
+from .models import Category, Marker, Area, Polyline
 
 # Register your models here.
 admin.site.register(Category)
@@ -24,4 +24,10 @@ class MakerAdmin(CustomGeoAdmin):
 @admin.register(Area)
 class AriaAdmin(CustomGeoAdmin):
     list_display = ('name', 'boundary')
+    search_fields = ('name',)
+
+
+@admin.register(Polyline)
+class PolylineAdmin(CustomGeoAdmin):
+    list_display = ('name', 'description')
     search_fields = ('name',)

@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.gis.db import models
+from django.contrib.gis.geos import LineString
 
 
 # Create your models here.
@@ -36,6 +37,15 @@ class Area(models.Model):
 
     class Meta:
         verbose_name_plural = 'Areas'
+
+    def __str__(self):
+        return self.name
+
+
+class Polyline(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+    path = models.LineStringField()
 
     def __str__(self):
         return self.name
