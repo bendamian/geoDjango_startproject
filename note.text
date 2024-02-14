@@ -54,7 +54,7 @@ DATABASES = {"default": {
 "NAME": BASE_DIR / "db.sqlite3",
 }}
 -------------------------------------------------
-install Pillow for image up lodes
+install pillow for image uploads
 
 ----------------------------------------
 Adding the Marker model to backend
@@ -65,3 +65,11 @@ $ python -m manage migrate
 
 add the Marker model to admin.py
 -----------------------------------------
+#installing Django REST framework
+pip install djangorestframework
+pip install djangorestframework-gis
+
+and add to the
+'rest_framework',
+'rest_framework_gis',
+-----------------------------------
