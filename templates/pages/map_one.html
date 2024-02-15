@@ -1,0 +1,31 @@
+{% extends './base.html' %} {% block content %}
+<h1 class="text-info">This is a folium map</h1>
+<div class="containter">
+  <div class="row mt-5 pt-5">
+    <div class="col-md-6 mt-5 pt-5">
+      <h3 class="text-info">Map Info</h3>
+      <p class="text-justify">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste et, sit
+        temporibus voluptatem architecto beatae saepe molestiae tempora quos
+        accusamus ratione! Quae hic, ratione voluptatum at quod dignissimos.
+        Quaerat, reprehenderit.
+      </p>
+      <p class="text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+        exercitationem officia dignissimos ea? Esse, quo dolorum. Iure id dicta,
+        iusto ad accusantium iste quidem fugiat consequatur pariatur at, ipsum
+        eaque.
+      </p>
+    </div>
+    <div class="col-md-6 mt-5 pt-5">
+      <h3 class="text-info">Map</h3>
+      <p class="text-center">{{ m | safe }}</p>
+    </div>
+  </div>
+  <div class="row mt-5 pt-5">
+    <div class="col-md-6 mt-5 pt-5"><p>map2</p></div>
+    <div class="col-md-6 mt-5 pt-5"><p>map3</p></div>
+  </div>
+</div>
+
+{% endblock %}
