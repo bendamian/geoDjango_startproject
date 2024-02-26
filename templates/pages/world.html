@@ -1,0 +1,22 @@
+{% extends './base.html' %} {% block content %}
+<h1 class="text-info">This is a folium map</h1>
+<div class="containter">
+  <div class="row border boder-info boder-5">
+    <div class="boder-info boder-5 col-md-1  "></div>
+
+    <div class="boder-info boder-5 col-md-10 ">
+      <h3 class="text-info">Map Info</h3>
+  </div>
+  </div>
+      <div id="map" class="m-2">  
+
+     {{ m | safe }}
+
+      </div>
+    </div>
+
+    <div class="boder-info boder-5 col-md-1 mt-2 pt-5"></div>
+
+    {% endblock %}
+  </div>
+</div>
