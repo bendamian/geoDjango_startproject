@@ -1,8 +1,8 @@
 {% extends './base.html' %} {% block content %}
 <h1 class="text-info">This is a folium map</h1>
 <div class="containter">
-  <div class="row border boder-info boder-5  ">
-    <div class="boder-info boder-5 col-md-6 mt-1 pt-5">
+  <div class="row mt-5 pt-5">
+    <div class="col-md-6 mt-5 pt-5">
       <h3 class="text-info">Map Info</h3>
       <p class="text-justify">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste et, sit
@@ -14,19 +14,17 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
         exercitationem officia dignissimos ea? Esse, quo dolorum. Iure id dicta,
         iusto ad accusantium iste quidem fugiat consequatur pariatur at, ipsum
-        <a href=" {%url  'map_claster'%} " class="link-warning"> more detail</a>
+        
       </p>
     </div>
     <div class="col-md-6 mt-5 pt-5">
-      <h3 class="text-info">Map</h3>
-      <p class="boder boder-info text-center">{{ m | safe }}</p>
+      <h3 class="text-info">{{ map | safe}}</h3>
+      <p class="text-center"></p>
     </div>
   </div>
   <div class="row mt-5 pt-5">
-    <div class="col-md-6 mt-5 pt-5">
-      <p>{{ n | safe }}</p>
-    </div>
-    <div class="col-md-6 mt-5 pt-5"><p>map y</p></div>
+    <div class="col-md-6 mt-5 pt-5"><p><!----></p></div>
+    <div class="col-md-6 mt-5 pt-5"><p>map3</p></div>
   </div>
 </div>
 
